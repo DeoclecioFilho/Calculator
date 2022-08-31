@@ -6,6 +6,7 @@ import {
     TouchableHighlight
 } from 'react-native'
 
+
 const styles=StyleSheet.create ({
     button: {
         fontSize: 40,

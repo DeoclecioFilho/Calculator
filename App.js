@@ -7,7 +7,7 @@ const   initialState = {
   displayValue: '0',
   clearDisplay: false,
   operation: null,
-  values: [0,0],
+  values: [0, 0],
   current:0,
 }
 
@@ -29,6 +29,7 @@ export default class App extends Component {
       const newValue =  parseFloat(displayValue)
       const values = [...this.state.values]
       values[this.state.current] = newValue
+      this.setState({ values })
     }
   }
 
